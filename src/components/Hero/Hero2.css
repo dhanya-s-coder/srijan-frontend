@@ -1,3 +1,23 @@
+.text-backdrop {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 400px;
+  height: 100%;
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+  background-position: left top;
+  filter: invert(1) brightness(2);
+  opacity: 0.15;
+  pointer-events: none;
+  z-index: 1;
+  -webkit-mask-image: linear-gradient(to right, black 0%, black 70%, transparent 100%);
+  mask-image: linear-gradient(to right, black 0%, black 70%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to top, transparent 10%, black 50%, transparent 90%);
+  mask-image: linear-gradient(to top, transparent 10%, black 50%, transparent 90%);
+  scale: 1;
+}
+
 .hero2-wrapper {
   width: 100%;
   min-height: 200vh;
@@ -136,7 +156,7 @@
   width: 500px;
   height: 500px;
   object-fit: contain;
-  z-index: 1;
+  z-index: 2;
 }
 
 .hero2-logo {
@@ -426,5 +446,26 @@
   .orange-glow {
     width: 80%;
     height: 80%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .text-backdrop {
+    width: 250px;
+    opacity: 0.12;
+  }
+}
+
+@media (max-width: 768px) {
+  .text-backdrop {
+    width: 180px;
+    opacity: 0.1;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-backdrop {
+    width: 120px;
+    opacity: 0.08;
   }
 }

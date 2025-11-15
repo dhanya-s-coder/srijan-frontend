@@ -2,11 +2,14 @@ import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion";
 import { NavLink } from "react-router-dom";
 import "./Hero2.css";
+import "./HeroCosmic.css";
 import logo from "../../assets/logo.png.png";
 import CountdownTimer from "../CountdownTimer/CountdownTimer";
 import Mandala from "../../assets/mandala.png";
 import Tree from "../../assets/TreeBg.png";
 import GalleryPage from "../../pages/Gallery";
+import GalleryGrid from "../GalleryGrid/GalleryGrid";
+import textBackdropSrc from "../../assets/text-backdrop.png";
 
 const navItems = [
   { path: "/", label: "HOME", hindi: "गृह" },
@@ -24,7 +27,7 @@ const resolveInitialSkipState = (forcedSkip) => {
   if (typeof window === "undefined") return true;
 
   const hasPlayed = sessionStorage.getItem('__HERO_ANIMATION_PLAYED__');
-  
+
   if (hasPlayed === 'true') {
     return true;
   }
@@ -94,10 +97,15 @@ const Hero2 = ({ onAnimationComplete, skipAnimation: skipAnimationProp }) => {
 
   return (
     <div ref={containerRef} className="hero2-wrapper">
-      <motion.div 
+      <motion.div
         className="hero2-container"
         style={{ opacity, scale }}
       >
+        <div
+          className="text-backdrop"
+          style={{ backgroundImage: `url(${textBackdropSrc})` }}
+        />
+
         <div className="hero2-background" />
 
         <motion.div
@@ -107,7 +115,7 @@ const Hero2 = ({ onAnimationComplete, skipAnimation: skipAnimationProp }) => {
           transition={{ duration: skipAnimation ? 0 : 0.8 }}
         >
           <div className="orange-glow" />
-          
+
           <img src={Tree} alt="Tree Background" className="tree-bg" />
         </motion.div>
 
@@ -322,7 +330,7 @@ const Hero2 = ({ onAnimationComplete, skipAnimation: skipAnimationProp }) => {
           animate={{
             x: (animationStage === "move" || animationStage === "main") ? "calc(-25vw)" : 0,
           }}
-          transition={{ 
+          transition={{
             duration: skipAnimation ? 0 : 1,
             ease: "easeInOut"
           }}
@@ -331,20 +339,20 @@ const Hero2 = ({ onAnimationComplete, skipAnimation: skipAnimationProp }) => {
             src={Mandala}
             alt="Mandala Background"
             className="hero2-mandala"
-            initial={{ 
+            initial={{
               opacity: skipAnimation ? 0.4 : 0,
-              rotate: 0 
+              rotate: 0
             }}
             animate={{
-              opacity: animationStage === "circle" ? 0 : 0.4,
+              opacity: animationStage === "circle" ? 0 : 0.8,
               rotate: 360,
             }}
             transition={{
               opacity: { duration: skipAnimation ? 0 : 1 },
-              rotate: { 
-                duration: 20, 
-                repeat: Infinity, 
-                ease: "linear" 
+              rotate: {
+                duration: 20,
+                repeat: Infinity,
+                ease: "linear"
               },
             }}
           />
@@ -354,10 +362,10 @@ const Hero2 = ({ onAnimationComplete, skipAnimation: skipAnimationProp }) => {
             alt="Srijan Logo"
             className="hero2-logo"
             initial={{ opacity: skipAnimation ? 1 : 0 }}
-            animate={{ 
-              opacity: (animationStage === "logo" || animationStage === "move" || animationStage === "main") ? 1 : 0 
+            animate={{
+              opacity: (animationStage === "logo" || animationStage === "move" || animationStage === "main") ? 1 : 0
             }}
-            transition={{ 
+            transition={{
               duration: skipAnimation ? 0 : 1
             }}
           />
@@ -388,7 +396,7 @@ const Hero2 = ({ onAnimationComplete, skipAnimation: skipAnimationProp }) => {
       </motion.div>
 
       <div className="gallery-section">
-        <GalleryPage />
+        <GalleryGrid />
       </div>
     </div>
   );

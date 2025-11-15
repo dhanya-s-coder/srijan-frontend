@@ -1,0 +1,336 @@
+.event-page-container {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background: linear-gradient(180deg, var(--primary-starless, #08061E) 0%, var(--primary-abyss, #301258) 50%, var(--primary-nebula, #5C2A9A) 100%);
+}
+
+.event-text-backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 400px;
+  height: 100%;
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+  background-position: left top;
+  filter: invert(1) brightness(2);
+  opacity: 0.15;
+  pointer-events: none;
+  z-index: 1;
+  -webkit-mask-image: linear-gradient(to right, black 0%, black 70%, transparent 100%);
+  mask-image: linear-gradient(to right, black 0%, black 70%, transparent 100%);
+}
+
+.event-page-background {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+}
+
+.event-orbs-container {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.event-orb {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(166, 83, 156, 0.5) 0%, rgba(198, 107, 193, 0.3) 40%, transparent 70%);
+  filter: blur(60px);
+  transform: translate(-50%, -50%);
+}
+
+.event-page-content {
+  position: relative;
+  z-index: 10;
+  padding: 40px 20px;
+  min-height: 100vh;
+}
+
+.event-back-button {
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 24px;
+  background: rgba(92, 42, 154, 0.3);
+  border: 2px solid rgba(166, 83, 156, 0.6);
+  border-radius: 50px;
+  color: var(--gold-text, #FED000);
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  z-index: 100;
+}
+
+.event-back-button:hover {
+  background: rgba(92, 42, 154, 0.5);
+  border-color: var(--gold-text, #FED000);
+}
+
+.event-back-button svg {
+  width: 20px;
+  height: 20px;
+}
+
+.event-page-header {
+  text-align: center;
+  margin-bottom: 60px;
+  margin-top: 40px;
+}
+
+.event-title-decoration {
+  width: 200px;
+  height: 2px;
+  background: linear-gradient(to right, transparent, var(--gold-text, #FED000), transparent);
+  margin: 0 auto;
+  position: relative;
+}
+
+.event-title-decoration.top {
+  margin-bottom: 30px;
+}
+
+.event-title-decoration.top::before,
+.event-title-decoration.top::after {
+  content: '✦';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--gold-text, #FED000);
+  font-size: 12px;
+}
+
+.event-title-decoration.top::before {
+  left: -20px;
+}
+
+.event-title-decoration.top::after {
+  right: -20px;
+}
+
+.event-title-decoration.bottom {
+  margin-top: 30px;
+}
+
+.event-page-title {
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 5rem;
+  font-weight: 700;
+  color: var(--gold-text, #FED000);
+  margin: 0;
+  text-shadow: 
+    0 0 40px rgba(254, 208, 0, 0.6),
+    0 0 80px rgba(166, 83, 156, 0.4),
+    0 2px 4px rgba(0, 0, 0, 0.8);
+  letter-spacing: 0.1em;
+}
+
+.event-title-star {
+  display: inline-block;
+  margin: 0 20px;
+  font-size: 2.5rem;
+  animation: rotateStar 4s linear infinite;
+}
+
+@keyframes rotateStar {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.event-page-subtitle {
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 1.2rem;
+  color: var(--accent-lilac-dust, #E3CDEC);
+  margin-top: 15px;
+  opacity: 0.9;
+  letter-spacing: 0.05em;
+}
+
+.event-categories-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 60px;
+  padding: 0 20px;
+}
+
+.event-category-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.event-category-icon-wrapper {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border: 2px solid rgba(166, 83, 156, 0.6);
+  padding: 2px;
+  margin-bottom: 10px;
+  background: rgba(92, 42, 154, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.event-category-item.active .event-category-icon-wrapper {
+  border-color: var(--gold-text, #FED000);
+  background: rgba(254, 208, 0, 0.1);
+}
+
+.event-category-icon {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.event-category-name {
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--accent-lilac-dust, #E3CDEC);
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+}
+
+.event-category-item.active .event-category-name {
+  color: var(--gold-text, #FED000);
+}
+
+.event-category-underline {
+  width: 32px;
+  height: 3px;
+  background: var(--gold-text, #FED000);
+  border-radius: 2px;
+  margin-top: 6px;
+  box-shadow: 0 0 10px rgba(254, 208, 0, 0.6);
+}
+
+.event-display-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (max-width: 1024px) {
+  .event-page-title {
+    font-size: 4rem;
+  }
+
+  .event-title-star {
+    font-size: 2rem;
+    margin: 0 15px;
+  }
+
+  .event-page-subtitle {
+    font-size: 1rem;
+  }
+
+  .event-categories-nav {
+    gap: 20px;
+  }
+
+  .event-category-icon-wrapper {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+@media (max-width: 768px) {
+  .event-text-backdrop {
+    width: 180px;
+    opacity: 0.1;
+  }
+
+  .event-back-button {
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    font-size: 0.8rem;
+  }
+
+  .event-page-title {
+    font-size: 2.5rem;
+  }
+
+  .event-title-star {
+    font-size: 1.5rem;
+    margin: 0 10px;
+  }
+
+  .event-page-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .event-categories-nav {
+    gap: 15px;
+  }
+
+  .event-category-icon-wrapper {
+    width: 56px;
+    height: 56px;
+  }
+
+  .event-category-name {
+    font-size: 0.75rem;
+  }
+
+  .event-page-header {
+    margin-bottom: 40px;
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .event-text-backdrop {
+    width: 120px;
+    opacity: 0.08;
+  }
+
+  .event-page-title {
+    font-size: 2rem;
+  }
+
+  .event-title-star {
+    font-size: 1.2rem;
+    margin: 0 8px;
+  }
+
+  .event-page-subtitle {
+    font-size: 0.8rem;
+  }
+
+  .event-categories-nav {
+    gap: 12px;
+  }
+
+  .event-category-icon-wrapper {
+    width: 48px;
+    height: 48px;
+  }
+
+  .event-category-name {
+    font-size: 0.7rem;
+  }
+
+  .event-back-button svg {
+    width: 16px;
+    height: 16px;
+  }
+}
