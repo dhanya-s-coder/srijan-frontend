@@ -24,8 +24,7 @@
 }
 
 .hero2-container {
-  position: sticky;
-  top: 0;
+  position: relative;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -81,7 +80,7 @@
 }
 
 .hero2-nav {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -210,7 +209,7 @@
 }
 
 .hamburger-btn {
-  position: fixed;
+  position: absolute;
   top: 1.5rem;
   right: 1.5rem;
   z-index: 60;

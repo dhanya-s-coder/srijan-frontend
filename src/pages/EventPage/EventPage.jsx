@@ -10,8 +10,8 @@ import LITERACY from "./EventIcons/LITERACY.png";
 import MUSIC from "./EventIcons/MUSIC.png";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
 import textBackdropSrc from "../../assets/text-backdrop.png";
+import PageHeader from "../../components/PageHeader/PageHeader";
 import "./EventPage.css";
 
 const categories = [
@@ -36,7 +36,6 @@ const orbs = [
 
 export default function EventPage() {
   const [activeCategory, setActiveCategory] = useState("ALL");
-  const navigate = useNavigate();
 
   return (
     <div className="event-page-container">
@@ -74,63 +73,14 @@ export default function EventPage() {
       </div>
 
       <div className="event-page-content">
-        <motion.button
-          className="event-back-button"
-          onClick={() => navigate("/")}
-          initial={{ opacity: 0, x: -20 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6 }}
-          whileHover={{ 
-            scale: 1.05,
-            boxShadow: "0 0 20px rgba(254, 208, 0, 0.5)"
-          }}
-          whileTap={{ scale: 0.95 }}
-        >
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <path d="M19 12H5M12 19l-7-7 7-7" />
-          </svg>
-          <span>BACK</span>
-        </motion.button>
-
-        <motion.div
-          className="event-page-header"
-          initial={{ opacity: 0, y: -30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-        >
-          <motion.div
-            className="event-title-decoration top"
-            initial={{ scaleX: 0 }}
-            animate={{ scaleX: 1 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-          />
-          
-          <h1 className="event-page-title">
-            <span className="event-title-star">✦</span>
-            EVENTS
-            <span className="event-title-star">✦</span>
-          </h1>
-          
-          <p className="event-page-subtitle">
-            Explore the vibrant spectrum of cultural celebrations
-          </p>
-          
-          <motion.div
-            className="event-title-decoration bottom"
-            initial={{ scaleX: 0 }}
-            animate={{ scaleX: 1 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-          />
-        </motion.div>
+        <PageHeader 
+          title="EVENTS"
+          subtitle="Explore the vibrant spectrum of cultural celebrations"
+          showBackButton={true}
+          backPath="/"
+          titleDelay={0.2}
+          showStars={true}
+        />
 
         <motion.nav
           className="event-categories-nav"

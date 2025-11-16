@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { NavLink } from "react-router-dom";
 import "./Hero2.css";
 import "./HeroCosmic.css";
@@ -58,13 +58,6 @@ const Hero2 = ({ onAnimationComplete, skipAnimation: skipAnimationProp }) => {
   const targetDate = new Date("2026-01-16T00:00:00");
 
   const containerRef = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start start", "end start"]
-  });
-
-  const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
-  const scale = useTransform(scrollYProgress, [0, 0.5], [1, 0.8]);
 
   useEffect(() => {
     if (skipAnimation) {
@@ -97,10 +90,7 @@ const Hero2 = ({ onAnimationComplete, skipAnimation: skipAnimationProp }) => {
 
   return (
     <div ref={containerRef} className="hero2-wrapper">
-      <motion.div
-        className="hero2-container"
-        style={{ opacity, scale }}
-      >
+      <div className="hero2-container">
         <div
           className="text-backdrop"
           style={{ backgroundImage: `url(${textBackdropSrc})` }}
@@ -393,7 +383,7 @@ const Hero2 = ({ onAnimationComplete, skipAnimation: skipAnimationProp }) => {
             <p className="hero2-subtitle">-from Centuries Past to Creations Beyond-</p>
           </motion.div>
         )}
-      </motion.div>
+      </div>
 
       <div className="gallery-section">
         <GalleryGrid />
