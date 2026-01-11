@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import EventCard from "./EventCard";
 import EventModal from "./EventModal";
-
+import eventsData from "./events.json";
 import ART from "./Images/ART.jpg";
 import CINEMA from "./Images/CINEMA.jpg";
 import COMEDY from "./Images/COMEDY.jpg";
@@ -17,21 +17,16 @@ export default function Display({ category }) {
 
 
   useEffect(() => {
-    const fetchEvents = async () => {
-      try {
-        const url = category === "ALL"
-          ? "https://srijan-2026.onrender.com/api/v1/event/all"
-          : `https://srijan-2026.onrender.com/api/v1/events/category/${category}`;
-        const response = await fetch(url);
-        if (!response.ok) throw new Error("Failed to fetch events");
-        const data = await response.json();
-        setEvents(data.data);// events will be set in events,use it in frontend as needed
-      } catch(err){
-        console.error("Error fetching events:", err);
-      }
-    };
-    fetchEvents();
-  }, [category]);
+  if (category === "ALL") {
+    setEvents(eventsData);
+  } else {
+    const filtered = eventsData.filter(
+      (event) => event.category === category
+    );
+    setEvents(filtered);
+  }
+}, [category]);
+
 
   return (
     <>

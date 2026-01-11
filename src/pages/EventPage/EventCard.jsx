@@ -91,25 +91,27 @@ export default function EventCard({ event, index, onClick }) {
 
             <div className="back-content">
               <div className="back-description">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
+                <p>{event.description}</p>
+
               </div>
 
               <div className="back-details-grid">
                 <div className="back-detail-item">
                   <p className="detail-label">DATE</p>
-                  <p className="detail-value">TBA</p>
+                  <p className="detail-value">{event.date}</p>
+
                 </div>
                 <div className="back-detail-item">
                   <p className="detail-label">TIME</p>
-                  <p className="detail-value">TBA</p>
+                 <p className="detail-value">{event.time}</p>
+
                 </div>
               </div>
 
               <div className="back-detail-item full">
                 <p className="detail-label">VENUE</p>
-                <p className="detail-value">TBA</p>
+                <p className="detail-value">{event.venue}</p>
+
               </div>
             </div>
 

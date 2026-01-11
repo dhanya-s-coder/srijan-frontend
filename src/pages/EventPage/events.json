@@ -1,0 +1,488 @@
+[
+  {
+    "id": "movie-night",
+    "name": "Movie Night",
+    "category": "CINEMA",
+    "image": "public/Images/CINEMA.jpg",
+    "description": "Lights, camera, and the ultimate chill session await you. Bring your blankets, snacks, and smiles for a perfect night of movies and memories.",
+    "date": "31 Jan 2026",
+    "time": "6:00 PM TO 9:00 PM",
+    "venue": "Penman Auditorium",
+    "detailsLink": "/events/movie-night"
+  },
+   {
+    "id": "2025-recap",
+    "name": "2025 Recap",
+    "category": "LITERACY",
+    "image": "public/Images/LITERACY.jpg",
+    "description": "2025 Rewind is a thrilling quiz event based on the major highlights of the year.Teams can have up to three members competing together.The event consists of two rounds — prelims (written) and finals. Top 8 teams from prelims qualify for the finals, with points awarded for correct answers.",
+
+
+    "date": "31 Jan 2026",
+    "time": "1:00 PM TO 4:00 PM",
+    "venue": "Penman Auditorium",
+    "detailsLink": "/events/2025-recap"
+  },
+  {
+    "id": "january-jam",
+    "name": "January Jam",
+    "category": "MUSIC",
+    "image": "public/Images/MUSIC.jpg",
+    "description": "A musical carnival where singers, bands, and performers ignite the stage with soulful melodies and electrifying performances.",
+    "date": "25 Jan 2026",
+    "time": "3:00 PM to 9:00 PM",
+    "venue": "Penman Quadrangle",
+    "detailsLink": "/events/january-jam"
+  },
+  {
+    "id": "kite-and-rangoli",
+    "name": "Kite & Rangoli",
+    "category": "ART",
+    "image": "public/Images/ART.jpg",
+    "description": "Soar into a vibrant celebration of colour, creativity, and festive spirit with kites in the sky and rangoli on the ground.",
+    "date": "18 Jan 2026",
+    "time": "10:00 AM to 2:00 PM",
+    "venue": "Amber Ground and Heritage",
+    "detailsLink": "/events/kite-and-rangoli"
+  },
+  {
+    "id": "flashmob",
+    "name": "Flashmob",
+    "category": "DANCE",
+    "image": "public/Images/DANCE.jpg",
+    "description": "A sudden burst of energy where dancers appear out of nowhere and turn the venue into a thrilling dance arena.",
+    "date": "01 Feb 2026",
+    "time": "7:00 PM Onwards",
+    "venue": "Ozone Mall",
+    "detailsLink": "/events/flashmob"
+  },
+  {
+    "id": "dei-ideathon",
+    "name": "The DE&I Ideathon",
+    "category": "LITERACY",
+    "image": "public/Images/LITERACY.jpg",
+    "description": "Teams innovate solutions for real-world Diversity, Equity, and Inclusion challenges through creativity and impact.",
+    "date": "23 Jan 2025",
+    "time": "6:00 PM to 9:00 PM",
+    "venue": "Penman Auditorium",
+    "detailsLink": "/events/dei-ideathon"
+  },
+  {
+    "id": "treasure-hunt",
+    "name": "Treasure Hunt",
+    "category": "LITERACY",
+    "image": "public/Images/LITERACY.jpg",
+    "description": "Race against time solving clues and uncovering secrets across the campus in this thrilling adventure.",
+    "date": "26 Jan 2025",
+    "time": "11:00 AM to 4:00 PM",
+    "venue": "IIT ISM Campus",
+    "detailsLink": "/events/treasure-hunt"
+  },
+  {
+    "id": "tathya-quiz",
+    "name": "Tathya – Republic Day Quiz",
+    "category": "LITERACY",
+    "image": "public/Images/LITERACY.jpg",
+    "description": "An engaging quiz celebrating the spirit of the nation with prelims and finals testing knowledge and speed.",
+    "date": "24 Jan 2025",
+    "time": "3:00 PM to 6:00 PM",
+    "venue": "New Academic Complex",
+    "detailsLink": "/events/tathya"
+  },
+  {
+    "id": "reflection",
+    "name": "Reflection",
+    "category": "DANCE",
+    "image": "public/Images/DANCE.jpg",
+    "description": "A duo dance event celebrating coordination, chemistry, and perfect synchronization.",
+    "date": "1 Feb 2025",
+    "time": "9:00 AM to 11:00 AM",
+    "venue": "Penman Auditorium",
+    "detailsLink": "/events/reflection"
+  },
+  {
+    "id": "footloose",
+    "name": "Footloose",
+    "category": "DANCE",
+    "image": "public/Images/DANCE.jpg",
+    "description": "A blazing solo dance showdown where every beat, move, and expression owns the spotlight.",
+    "date": "1 Feb 2025",
+    "time": "11:30 AM to 1:30 PM",
+    "venue": "Penman Auditorium",
+    "detailsLink": "/events/footloose"
+  },
+  {
+    "id": "street-reloaded",
+    "name": "Street Reloaded",
+    "category": "DANCE",
+    "image": "public/Images/DANCE.jpg",
+    "description": "A solo street dance battle where rhythm, creativity, and raw energy collide on stage.",
+    "date": "7 Feb 2025",
+    "time": "3:30 PM to 6:30 PM",
+    "venue": "Open Air Theatre",
+    "detailsLink": "/events/street-reloaded"
+  },
+  {
+    "id": "street-beats",
+    "name": "Street Beats",
+    "category": "DANCE",
+    "image": "public/Images/DANCE.jpg",
+    "description": "High-energy crew dance battles featuring hip-hop, popping, locking, and more.",
+    "date": "7 Feb 2025",
+    "time": "9:00 AM to 12:00 PM",
+    "venue": "Near library",
+    "detailsLink": "/events/street-beats"
+  },
+   {
+    "id": "hustle-herd",
+    "name": "Hustle Herd",
+    "category": "DANCE",
+    "image": "public/Images/DANCE.jpg",
+    "description": "Hustle Herd brings electrifying dance crews together for a high-energy showcase of unity and rhythm. Teams light up the stage with sharp moves, creativity, and flawless coordination. Every beat hits harder when the whole crew moves as one.\nGet ready for a power-packed performance\nthat celebrates pure teamwork and talent!",
+
+    "date": "6 Feb 2025",
+    "time": "2:00 PM to 4:30 PM",
+    "venue": "Penman Auditorium",
+    "detailsLink": "/events/hustle-herd"
+  },
+  {
+    "id": "aaroh",
+    "name": "Aaroh",
+    "category": "MUSIC",
+    "image": "public/Images/MUSIC.jpg",
+    "description": "A solo singing showdown where performers mesmerize the audience with their voice and emotions.",
+    "date": "7 Feb 2025",
+    "time": "12:00 PM to 4:00 PM",
+    "venue": "GJLT",
+    "detailsLink": "/events/aaroh"
+  },
+  {
+    "id": "harmony",
+    "name": "Harmony",
+    "category": "MUSIC",
+    "image": "public/Images/MUSIC.jpg",
+    "description": "The iconic band competition where student bands compete to create unforgettable musical moments.",
+    "date": "8 Feb 2025",
+    "time": "4:00 PM to 8:00 PM",
+    "venue": "Open Air Theatre",
+    "detailsLink": "/events/harmony"
+  },
+  {
+    "id": "paridhaan",
+    "name": "Paridhaan",
+    "category": "FASHION",
+    "image": "public/Images/FASHION.png",
+    "description": "A fashion showdown where creativity, confidence, and storytelling meet on the ramp.",
+    "date": "7 Feb 2025",
+    "time": "5:00 PM to 8:00 PM",
+    "venue": "Amber Ground",
+    "detailsLink": "/events/paridhaan"
+  },
+  {
+    "id": "mr-mrs-srijan",
+    "name": "Mr. & Ms. Srijan",
+    "category": "FASHION",
+    "image": "public/Images/FASHION.png",
+    "description": "A dazzling showcase of personality, talent, wit, and elegance to crown the faces of Srijan.",
+    "date": "6 Feb 2025",
+    "time": "5:00 PM to 8:00 PM",
+    "venue": "Amber Ground",
+    "detailsLink": "/events/mr-mrs-srijan"
+  },
+  {
+    "id": "scriptwriting-competition",
+    "name": "Scriptwriting Competition",
+    "category": "CINEMA",
+    "image": "public/Images/CINEMA.jpg",
+    "description": "Step into the writer’s chair and craft a story that’s ready for the big screen. From heart-racing thrillers to soul-stirring dramas, let your words create worlds, emotions, and unforgettable moments.",
+
+    "date": "6 Feb 2025",
+    "time": "till 11:59 PM IST, 8st Feb 2026",
+    "venue": "Online",
+    "detailsLink": "/events/scriptwriting-competition"
+  },
+  {
+    "id": "frames-of-srijan",
+    "name": "Frames of Srijan",
+    "category": "CINEMA",
+    "image": "public/Images/CINEMA.jpg",
+    "description": "Photography contest capturing moments of Srijan.",
+    "date": "6 Feb 2025",
+    "time": "till 11:59 PM IST, 8st Feb 2026",
+    "venue": " Online Submission + Screening in Club Room, SAC-304",
+    "detailsLink": "/events/frames-of-srijan"
+  },
+    {
+    "id": "online-short-film",
+    "name": "Online Short Film Making",
+    "category": "CINEMA",
+    "image": "public/Images/CINEMA.jpg",
+    "description": "Create short films online and showcase creativity.",
+     "date": "6 Feb 2025",
+    "time": "till 12:00 PM IST, 8st Feb 2026",
+    "venue": "Online",
+    "detailsLink": "/events/online-short-film"
+  },
+  {
+    "id": "fotorush",
+    "name": "Fotorush",
+    "category": "ART",
+    "image": "public/Images/ART.jpg",
+    "description": "Photography competition with quick challenges.",
+    "date": "6 Feb 2025",
+    "time": "11:00 AM to 3:00 PM",
+    "venue": "Photography Lab",
+    "detailsLink": "/events/fotorush"
+  },
+  {
+    "id": "srijan-through-my-lens",
+    "name": "Srijan Through My Lens",
+    "category": "ART",
+    "image": "public/Images/ART.jpg",
+    "description": "A photography exhibition showcasing creativity.",
+    "date": "6 Feb 2025",
+    "time": "till 11:59 PM IST, 8st Feb 2026",
+    "venue": "Online",
+    "detailsLink": "/events/srijan-through-my-lens"
+  },
+  {
+    "id": "clay-modelling",
+    "name": "Clay Modelling",
+    "category": "ART",
+    "image": "public/Images/ART.jpg",
+    "description": "Hands-on clay modelling workshop showcasing creativity.",
+    "date": "6 Feb 2025",
+    "time": "12:00 PM to 5:00 PM",
+    "venue": "Open Air Theatre",
+    "detailsLink": "/events/clay-modelling"
+  },
+  {
+    "id": "diy",
+    "name": "DIY",
+    "category": "ART",
+    "image": "public/Images/ART.jpg",
+    "description": "A DIY craft event encouraging creative expression.",
+    "date": "7 Feb 2025",
+    "time": "9:00 AM to 5:00 PM",
+    "venue": "NLHC",
+    "detailsLink": "/events/diy"
+  },
+  {
+    "id": "face-painting",
+    "name": "Face Painting",
+    "category": "ART",
+    "image": "public/Images/ART.jpg",
+    "description": "Creative face painting challenge for participants.",
+    "date": "8 Feb 2025",
+    "time": "11:00 AM to 4:00 PM",
+    "venue": "Open Air Theatre",
+    "detailsLink": "/events/face-painting"
+  },
+  {
+    "id": "flavours-of-the-globe",
+    "name": "Flavours of the Globe",
+    "category": "ART",
+    "image": "public/Images/ART.jpg",
+    "description": "Culinary art and international cuisine event.",
+    "date": "7 Feb 2025",
+    "time": "12:00 PM to 2:30 PM",
+    "venue": "Near library",
+    "detailsLink": "/events/flavours-of-the-globe"
+  },
+   {
+    "id": "saanp-tank",
+    "name": "Saanp Tank",
+    "category": "COMEDY",
+    "image": "public/Images/COMEDY.jpg",
+    "description": "Comedy skit and fun performance challenge.",
+    "date": "7 Feb 2025",
+    "time": "1:00 PM to 4:00 PM",
+    "venue": "NLHC",
+    "detailsLink": "/events/saanp-tank"
+  },
+  {
+    "id": "ism-got-latent",
+    "name": "ISM’s Got Latent",
+    "category": "COMEDY",
+    "image": "public/Images/COMEDY.jpg",
+    "description": "Stand-up and comedic acts to entertain the crowd.",
+    "date": "8 Feb 2025",
+    "time": "3:00 PM to 6:00 PM",
+    "venue": "NAC Hall",
+    "detailsLink": "/events/ism-got-latent"
+  },
+  {
+    "id": "speak-snitch-survive",
+    "name": "Speak Snitch Survive",
+    "category": "LITERACY",
+    "image": "public/Images/LITERACY.jpg",
+    "description": "A quiz and literacy-based problem-solving event.",
+    "date": "6 Feb 2025",
+    "time": "2:00 PM to 5:00 PM",
+    "venue": "GJLT",
+    "detailsLink": "/events/speak-snitch-survive"
+  },
+  {
+    "id": "chakravyuh",
+    "name": "Chakravyuh",
+    "category": "LITERACY",
+    "image": "public/Images/LITERACY.jpg",
+    "description": "Debate and strategy event testing wit and knowledge.",
+    "date": "6 Feb 2025",
+    "time": "2:00 PM to 5:00 PM",
+    "venue": "NLHC",
+    "detailsLink": "/events/chakravyuh"
+  },
+  {
+    "id": "kavyadhara",
+    "name": "Kavyadhara",
+    "category": "LITERACY",
+    "image": "public/Images/LITERACY.jpg",
+    "description": "Poetry recitation and creative expression contest.",
+    "date": "7 Feb 2025",
+    "time": "4:00 PM to 6:00 PM",
+    "venue": "NLHC",
+    "detailsLink": "/events/kavyadhara"
+  },
+  {
+    "id": "plot-paradox",
+    "name": "Plot Paradox",
+    "category": "LITERACY",
+    "image": "public/Images/LITERACY.jpg",
+    "description": "Short story writing and analytical thinking challenge.",
+    "date": "8 Feb 2025",
+    "time": "10:00 AM to 12:00 PM",
+    "venue": "NLHC",
+    "detailsLink": "/events/plot-paradox"
+  },
+  {
+    "id": "helm-quiz",
+    "name": "HELM Quiz",
+    "category": "LITERACY",
+    "image": "public/Images/LITERACY.jpg",
+    "description": "General knowledge quiz with multiple rounds and fun prizes.",
+    "date": "7 Feb 2025",
+    "time": "12:00 PM to 4:00 PM",
+    "venue": "NLHC",
+    "detailsLink": "/events/helm-quiz"
+  },
+  {
+    "id": "general-quiz",
+    "name": "General Quiz",
+    "category": "LITERACY",
+    "image": "public/Images/LITERACY.jpg",
+    "description": "Competitive quiz testing speed, knowledge and logic.",
+    "date": "6 Feb 2025",
+    "time": "12:00 PM to 4:00 PM",
+    "venue": "NAC Auditorium",
+    "detailsLink": "/events/general-quiz"
+  },
+  {
+    "id": "ek-abhinay",
+    "name": "Ek Abhinay",
+    "category": "DRAMA",
+    "image": "public/Images/DRAMA.jpg",
+    "description": "A theatrical drama event showcasing acting and stagecraft.",
+    "date": "6 Feb 2025",
+    "time": "10:00 AM to 12:00 PM",
+    "venue": "GJLT",
+    "detailsLink": "/events/ek-abhinay"
+  },
+  {
+    "id": "hoonkaar",
+    "name": "Hoonkaar",
+    "category": "DRAMA",
+    "image": "public/Images/DRAMA.jpg",
+    "description": "Powerful performances exploring intense drama and storytelling.",
+    "date": "7 Feb 2025",
+    "time": "2:30 to 4:30 PM",
+    "venue": "Library stairs",
+    "detailsLink": "/events/hoonkaar"
+  },
+  
+  {
+    "id": "graphic-grapple",
+    "name": "Graphic Grapple",
+    "category": "ART",
+    "image": "public/Images/ART.jpg",
+    "description": "A graphic designing contest to test design skills.",
+    "date": "7 Feb 2025",
+    "time": "2:00 PM to 4:00 PM",
+    "venue": "NLHC",
+    "detailsLink": "/events/graphic-grapple"
+  },
+  
+  
+
+  
+ 
+  
+  {
+    "id": "folktwist",
+    "name": "Folktwist",
+    "category": "LITERACY",
+    "image": "public/Images/LITERACY.jpg",
+    "description": "Cultural and folklore-themed quiz event.",
+    "date": "6 Feb 2025",
+    "time": "9:00 AM to 12:00 AM",
+    "venue": "NAC Auditorium",
+    "detailsLink": "/events/folktwist"
+  },
+  {
+    "id": "trialthlon",
+    "name": "Trialthlon",
+    "category": "LITERACY",
+    "image": "public/Images/LITERACY.jpg",
+    "description": "Multi-discipline knowledge challenge for teams.",
+    "date": "6 Feb 2025",
+    "time": "11:00 AM to 1:00 PM",
+    "venue": "NLHC",
+    "detailsLink": "/events/trialthlon"
+  },
+  
+  {
+    "id": "triwizard-tournament",
+    "name": "Triwizard Tournament",
+    "category": "LITERACY",
+    "image": "public/Images/LITERACY.jpg",
+    "description": "Multi-level literacy and logic challenge inspired by fantasy themes.",
+    "date": "8 Feb 2025",
+    "time": "12:00 PM to 4:00 PM",
+    "venue": "NLHC",
+    "detailsLink": "/events/triwizard-tournament"
+  },
+   
+  {
+    "id": "banger-voices",
+    "name": "Banger Voices",
+    "category": "DRAMA",
+    "image": "public/Images/DRAMA.jpg",
+    "description": "Dramatic monologue competition showcasing powerful solo performances.",
+    "date": "7 Feb 2025",
+    "time": "6:00 PM to 8:00 PM",
+    "venue": "NLHC",
+    "detailsLink": "/events/banger-voices"
+  },
+   {
+    "id": "queer-trivia",
+    "name": "Queer Trivia",
+    "category": "LITERACY",
+    "image": "public/Images/LITERACY.jpg",
+    "description": "A trivia quiz focused on LGBTQ+ history and culture.",
+    "date": "8 Feb 2025",
+    "time": "4:00 PM to 6:00 PM",
+    "venue": "NLHC",
+    "detailsLink": "/events/queer-trivia"
+  },
+  {
+    "id": "guest-talk-udaan",
+    "name": "Guest Talk (UDAAN)",
+    "category": "LITERACY",
+    "image": "public/Images/LITERACY.jpg",
+    "description": "Special guest lecture inspiring students in various domains.",
+    "date": "6 Feb 2025",
+    "time": "4:00 PM to 7:00 PM",
+    "venue": "NAC Auditorium",
+    "detailsLink": "/events/guest-talk-udaan"
+  }
+]

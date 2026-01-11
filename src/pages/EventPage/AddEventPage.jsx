@@ -25,6 +25,16 @@ const AddEventPage = () => {
         "DANCE", "ART", "MUSIC", "LITERACY", "DRAMA",
         "CINEMA", "FASHION", "COMEDY", "TECH"
     ];
+const categoryImages = {
+  ART: "/Images/ART.jpg",
+  CINEMA: "/Images/CINEMA.jpg",
+  COMEDY: "/Images/COMEDY.jpg",
+  DANCE: "/Images/DANCE.jpg",
+  DRAMA: "/Images/DRAMA.jpg",
+  LITERACY: "/Images/LITERACY.jpg",
+  MUSIC: "/Images/MUSIC.jpg",
+  FASHION: "/Images/FASHION.jpg",
+};
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
@@ -80,7 +90,8 @@ const AddEventPage = () => {
     const previewEvent = {
         name: formData.event_name || "Event Name",
         category: formData.event_category,
-        image: formData.bg_image_url || "",
+        image: categoryImages[formData.event_category],
+
     };
 
     return (

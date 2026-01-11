@@ -13,6 +13,7 @@ import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import PageHeader from "../../components/PageHeader/PageHeader";
 import "./EventPage.css";
+import events from "./events.json"
 
 const categories = [
   { icon: ALL, categoryname: "ALL" },
@@ -148,7 +149,8 @@ export default function EventPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 1.2 }}
         >
-          <Display category={activeCategory} />
+          <Display category={activeCategory} events={events} />
+
         </motion.div>
       </div>
     </div>
